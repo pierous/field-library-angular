@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FieldLibComponent } from './field-lib.component';
+import { FieldComponent } from './field.component';
 
-describe('FieldLibComponent', () => {
-  let component: FieldLibComponent;
-  let fixture: ComponentFixture<FieldLibComponent>;
+describe('FieldComponent', () => {
+  let component: FieldComponent;
+  let fixture: ComponentFixture<FieldComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FieldLibComponent ]
+      declarations: [ FieldComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FieldLibComponent);
+    fixture = TestBed.createComponent(FieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

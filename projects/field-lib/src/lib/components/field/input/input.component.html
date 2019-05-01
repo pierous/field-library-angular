@@ -1,0 +1,16 @@
+<!-- Modo Lectura -->
+<div *ngIf="!edit">
+  <field [label]="label" [value]="_control.value"></field>
+</div>
+
+<!-- Modo Edicion -->
+<div [hidden]="!edit"> 
+  <mat-form-field>
+    <!-- {{ label }}: -->
+    <mat-icon *ngIf="iconPrefix" matPrefix>{{ iconPrefix }}</mat-icon>
+    <mat-label>{{ label }}</mat-label>
+    <ng-content></ng-content>
+    <mat-icon *ngIf="iconSuffix" matSuffix>{{ iconSuffix }}</mat-icon>
+    <!-- <input matInput type="text" value=""> -->
+  </mat-form-field>
+</div>
