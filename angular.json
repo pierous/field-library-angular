@@ -133,6 +133,46 @@
           }
         }
       }
+    },
+    "field-lib": {
+      "root": "projects/field-lib",
+      "sourceRoot": "projects/field-lib/src",
+      "projectType": "library",
+      "prefix": "field",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/field-lib/tsconfig.lib.json",
+            "project": "projects/field-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/field-lib/src/test.ts",
+            "tsConfig": "projects/field-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/field-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/field-lib/tsconfig.lib.json",
+              "projects/field-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "field-lib-app"

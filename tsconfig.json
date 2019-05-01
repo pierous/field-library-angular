@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "field-lib": [
+        "dist/field-lib"
+      ],
+      "field-lib/*": [
+        "dist/field-lib/*"
+      ]
+    }
   }
 }
