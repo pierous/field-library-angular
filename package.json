@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build_lib": "ng build field-lib",
+    "npm_pack": "cd dist/field-lib && npm pack",
+    "package": "npm run build_lib && npm run npm_pack",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
