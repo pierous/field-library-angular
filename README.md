@@ -1,3 +1,19 @@
+## Usage
+
+`ng new "app-name"`
+`ng add @angular/material`
+`npm install https://github.com/pierous/field-library-angular/releases/download/0.0.1/field-lib-0.0.1.tgz`
+
+Import in app.module.ts
+
+import { FieldLibModule } from '../../node_modules/field-lib';
+
+imports: [
+    ...
+    FieldLibModule,
+    ...
+],
+
 # FieldLibApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.

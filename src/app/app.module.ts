@@ -1,7 +1,6 @@
 // Angular
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Librerias
@@ -17,7 +16,6 @@ import { FieldLibModule } from 'projects/field-lib/src/lib/field-lib.module';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
     BrowserAnimationsModule,
     FieldLibModule,
   ],

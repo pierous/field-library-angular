@@ -1,6 +1,7 @@
 // Angular
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Material
 import {
@@ -15,6 +16,12 @@ import { FieldComponent } from './components/field/field.component';
 import { InputComponent } from './components/field/input/input.component';
 import { SelectComponent } from './components/field/select/select.component';
 
+const MyComponents = [
+  FieldComponent,
+  InputComponent,
+  SelectComponent,
+];
+
 @NgModule({
   declarations: [
     FieldComponent,
@@ -23,15 +30,15 @@ import { SelectComponent } from './components/field/select/select.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     MatIconModule,
     MatInputModule,
     MatSelectModule,
     MatFormFieldModule,
   ],
   exports: [
-    FieldComponent,
-    InputComponent,
-    SelectComponent,
+    MyComponents,
+    ReactiveFormsModule,
     // MatIconModule,
     MatInputModule,
     // MatFormFieldModule,
