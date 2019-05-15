@@ -1,6 +1,9 @@
 <!-- Modo Lectura -->
 <div *ngIf="!edit">
-  <field [label]="label" [value]="_control.value"></field>
+  <field
+    [iconPrefix]="iconPrefix" [iconSuffix]="iconSuffix"
+    [label]="label" [value]="_control.value"
+  ></field>
 </div>
 
 <!-- Modo Edicion -->

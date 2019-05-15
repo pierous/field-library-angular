@@ -1,4 +1,18 @@
-<div>
-  <div>{{ label }}</div>
-  <div>{{ value }}</div>
+<div class="field">
+  <div class="wrapper">
+
+    <div class="icon" *ngIf="iconPrefix">
+      <mat-icon>{{ iconPrefix }}</mat-icon>
+    </div>
+
+    <div>
+      <div>{{ label }}</div>
+      <div>{{ value }}</div>
+    </div>
+
+    <div class="icon" *ngIf="iconSuffix">
+      <mat-icon>{{ iconSuffix }}</mat-icon>
+    </div>
+
+  </div>
 </div>
