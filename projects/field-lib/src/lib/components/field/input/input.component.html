@@ -10,8 +10,15 @@
 <div [hidden]="!edit"> 
   <mat-form-field>
     <mat-icon *ngIf="iconPrefix" matPrefix>{{ iconPrefix }}</mat-icon>
-    <mat-label>{{ label }}</mat-label>
+    <mat-label>{{ label }}
+      <span *ngIf="required" aria-hidden="true" class="mat-placeholder-required mat-form-field-required-marker ng-tns-c3-0 ng-star-inserted"> *</span>
+    </mat-label>
     <ng-content></ng-content>
+    <mat-error>
+      <span *ngIf="_control.ngControl.errors">
+        <mat-error *ngIf="_control.ngControl.errors.required">Este campo es obligatorio.</mat-error>
+      </span>
+    </mat-error>
     <mat-icon *ngIf="iconSuffix" matSuffix>{{ iconSuffix }}</mat-icon>
   </mat-form-field>
 </div>

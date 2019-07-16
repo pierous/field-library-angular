@@ -1,3 +1,9 @@
-<p>
-  select works!
-</p>
+<mat-form-field>
+  <!-- <mat-select placeholder="Color" formControlName="color">
+    <mat-option value="primary">Primary</mat-option>
+    <mat-option value="accent">Accent</mat-option>
+    <mat-option value="warn">Warn</mat-option>
+  </mat-select> -->
+  <mat-label>{{ label }}</mat-label>
+  <ng-content></ng-content>
+</mat-form-field>

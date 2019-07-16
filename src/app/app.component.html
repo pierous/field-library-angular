@@ -5,9 +5,9 @@
   </h1>
 </div>
 <h2>Field</h2>
-<field label="Nombre" value="David"></field>
+<!-- <field label="Nombre" value="David"></field> -->
 
-<field label="Apellido" value="David" iconPrefix="visibility"></field>
+<!-- <field label="Apellido" value="David" iconPrefix="visibility"></field> -->
 
 <h2>Field Input</h2>
 
@@ -18,15 +18,25 @@
     <input matInput type="text" formControlName="nombre">
   </field-input>
 
-  <field-input label="1º Apellido" [edit]="true">
+  <!-- <field-input label="1º Apellido" iconPrefix="visibility" [edit]="true">
     <input matInput type="text" formControlName="apellido1">
-  </field-input>
+  </field-input> -->
 
-  <field-input label="2º Apellido">
+  <!-- <field-input label="2º Apellido">
     <input matInput type="text" formControlName="apellido2">
-  </field-input>
+  </field-input> -->
 
 </form>
 
 
 <h2>Field Select</h2>
+
+<!-- <form [formGroup]="form1">
+  <field-input label="Color" [edit]="true" iconSuffix="visibility">
+    <mat-select formControlName="color">
+      <mat-option value="primary">Primary</mat-option>
+      <mat-option value="accent">Accent</mat-option>
+      <mat-option value="warn">Warn</mat-option>
+    </mat-select>
+  </field-input>
+</form> -->

@@ -41,6 +41,7 @@ const MyComponents = [
     ReactiveFormsModule,
     // MatIconModule,
     MatInputModule,
+    MatSelectModule,
     // MatFormFieldModule,
   ]
 })
